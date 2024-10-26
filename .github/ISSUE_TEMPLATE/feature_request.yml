@@ -1,0 +1,37 @@
+name: Feature Request
+description: Suggest a new feature or improvement
+labels:
+  - enhancement
+body:
+  - type: input
+    id: project
+    attributes:
+      label: Project
+      description: The project which this bug report is for.
+      placeholder: Name of the project (ex. EasyZoom)
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Feature Description
+      description: Describe the new feature you'd like to see.
+    validations:
+      required: true
+
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Purpose
+      description: Explain why this feature would be used.
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Information
+      description: Share any extra details that might help understand your suggestion.
+      placeholder: |
+        Add any extra details, screenshots, or sources here.
