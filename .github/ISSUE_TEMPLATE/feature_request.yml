@@ -3,35 +3,28 @@ description: Suggest a new feature or improvement
 labels:
   - enhancement
 body:
+  - type: markdown
+    attributes:
+      value: >
+        **Before making a feature request, please search existing denied or
+        planned requests to avoid duplicates.**
   - type: input
     id: project
     attributes:
       label: Project
-      description: The project which this bug report is for.
+      description: The project which this feature request is for.
       placeholder: Name of the project (ex. EasyZoom)
     validations:
       required: true
-
   - type: textarea
     id: description
     attributes:
       label: Feature Description
-      description: Describe the new feature you'd like to see.
+      description: Describe the feature you want added in detail.
     validations:
       required: true
-
-  - type: textarea
-    id: purpose
-    attributes:
-      label: Purpose
-      description: Explain why this feature would be used.
-    validations:
-      required: true
-
   - type: textarea
     id: context
     attributes:
       label: Additional Information
-      description: Share any extra details that might help understand your suggestion.
-      placeholder: |
-        Add any extra details, screenshots, or sources here.
+      description: Share any extra details or references that might help understand your suggestion.
